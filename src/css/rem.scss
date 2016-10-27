@@ -1,0 +1,5 @@
+$font-size:20;
+@function px2rem($px){
+    @return $px / $font-size * 1rem;
+}
+//若$px =20,font-size=20 则  20/20*1rem=1rem也就是说font-size的值就是1rem

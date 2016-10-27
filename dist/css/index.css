@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  height: 8.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+header ul {
+  height: 4.25rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  background: #E4366B;
+}
+
+header ul li:nth-child(1), header ul li:nth-child(3) {
+  width: 4.25rem;
+  line-height: 4.25rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+header ul li:nth-child(2) {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li:nth-child(2) span {
+  width: 6.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+}
+
+header ul li:nth-child(2) a {
+  float: right;
+  font-size: 1.5rem;
+  width: 5.5rem;
+  height: 2.65rem;
+  line-height: 2.65rem;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
+  border: 0.1rem solid #ccc;
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+}
+
+header .header_search {
+  background: #52525A;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  line-height: 4.5rem;
+}
+
+header .header_search div {
+  height: 4.5rem;
+  line-height: 4.5rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header .header_search div i {
+  font-size: 3rem;
+  position: absolute;
+  left: 1rem;
+  z-index: 1;
+}
+
+header .header_search div input {
+  width: 29.5rem;
+  height: 2.8rem;
+  outline: none;
+  border: 0;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  font-size: 1.5rem;
+  padding-left: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-container .swiper-slide {
+  overflow: auto;
+}
+
+#tabs-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+#tabs-container .lunbo {
+  height: 12.5rem;
+  width: 100%;
+  background: green;
+}
+
+#tabs-container .lunbo .swiper-pagination-bullet {
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  font-size: 0.4rem;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#tabs-container .lunbo .swiper-pagination-bullet-active {
+  color: #fff;
+  background: red;
+}
+
+#tabs-container .lunbo .lunbo_img {
+  width: 100%;
+  height: 12.5rem;
+}
+
+#tabs-container .lunbo .lunbo_img img {
+  width: 100%;
+  height: 12.5rem;
+  background-size: 100% 100%;
+}
+
+#tabs-container .content_list {
+  width: 100%;
+  flex: 1;
+  overflow: auto;
+  flex-direction: column;
+}
+
+#tabs-container .content_list dl {
+  width: 96%;
+  height: 9rem;
+  padding-left: 0.75rem;
+  margin-top: 1rem;
+}
+
+#tabs-container .content_list dl dt {
+  float: left;
+  margin-right: 0.5rem;
+}
+
+#tabs-container .content_list dl dt img {
+  width: 8.7rem;
+  height: 8.7rem;
+}
+
+#tabs-container .content_list dl dd {
+  font-size: 1.5rem;
+  color: black;
+}
+
+#tabs-container .content_list dl dd .dd_left {
+  float: left;
+  margin-right: 4rem;
+  margin-top: 0.75rem;
+}
+
+#tabs-container .content_list dl dd .dd_left h3 b {
+  color: #F2618A;
+  margin-right: 0.5rem;
+}
+
+#tabs-container .content_list dl dd .dd_left h3 del {
+  color: #BDBBBC;
+  font-size: 1rem;
+}
+
+#tabs-container .content_list dl dd .dd_rihgt {
+  float: left;
+  width: 6rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  margin-top: 1.25rem;
+  text-align: center;
+  background: #F2618A;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+}
+
+#tabs-container .content_list dl dd .dd_rihgt i {
+  font-size: 1.5rem !important;
+  color: white;
+}
+
+.listall {
+  width: 100%;
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+}
+
+.listall .list_tit {
+  height: 4.25rem;
+  line-height: 4.25rem;
+  border-bottom: 0.05rem solid #CBCBCB;
+  padding-left: 1rem;
+  flex: 1;
+  display: flex;
+}
+
+.listall .list_tit span {
+  width: 5rem;
+}
+
+.listall .list_tit i {
+  width: 3rem;
+  font-size: 1.5rem;
+  color: #CBCBCB;
+}
+
+.listall .list_tit a {
+  flex: 1;
+}
+
+.listall .list_cont ul li {
+  height: 4.25rem;
+  line-height: 4.25rem;
+  border-bottom: 0.1rem solid #CBCBCB;
+  padding-left: 2rem;
+  flex: 1;
+  display: flex;
+}
+
+.listall .list_cont ul li span {
+  width: 10rem;
+}
+
+.listall .list_cont ul li i {
+  width: 3rem;
+  font-size: 1.5rem;
+  color: #CBCBCB;
+}
+
+.listall .list_cont ul li a {
+  flex: 1;
+}
+
+.carno {
+  padding-top: 3rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carno p {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.carno .carno_img {
+  width: 13rem;
+  height: 13rem;
+  margin-top: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+.carno .carno_img img {
+  width: 13rem;
+  height: 13rem;
+}
+
+.carno .gowhere {
+  width: 21rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: #EF4C7B;
+  text-align: center;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.carno .gowhere a {
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.nicheng {
+  height: 8.25rem;
+  margin-top: 3rem;
+  margin-bottom: 2.25rem;
+}
+
+.nicheng dl dt {
+  float: left;
+  width: 8.25rem;
+  height: 8.25rem;
+  background: rgba(20, 20, 20, 0.7);
+  margin-left: 1.75rem;
+  box-sizing: border-box;
+  border-radius: 1.5rem 1.5rem 1.5rem 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+.nicheng dl dt i {
+  font-size: 7.5rem;
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+.nicheng dl dd {
+  padding-top: 1.5rem;
+}
+
+.nicheng dl dd p {
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nicheng dl dd span {
+  float: left;
+  width: 5.4rem;
+  height: 2.65rem;
+  line-height: 2.65rem;
+  background: #F1507C;
+  margin-right: 2rem;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  text-align: center;
+}
+
+.nicheng dl dd span a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.xiu_list {
+  width: 27.9rem;
+  border: 0.05rem solid #ccc;
+  border-radius: 1rem 1rem 1rem 1rem;
+  margin-left: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.xiu_list ul li {
+  height: 4.25rem;
+  line-height: 4.25rem;
+  border-bottom: 0.1rem solid #CBCBCB;
+  padding-left: 2rem;
+  flex: 1;
+  display: flex;
+}
+
+.xiu_list ul li span {
+  width: 11rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.xiu_list ul li i {
+  width: 3rem;
+  font-size: 1.5rem;
+  color: #CBCBCB;
+}
+
+.xiu_list ul li a {
+  flex: 1;
+}
+
+.xiu_list ul li.nobottom {
+  border-bottom: none;
+}
+
+.tcdl {
+  width: 28rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: #E22D64;
+  text-align: center;
+  margin-left: 1.6rem;
+}
+
+.tcdl a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+}
+
+footer {
+  height: 4.9rem;
+}
+
+footer ul {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #484850;
+}
+
+footer ul li {
+  width: 20%;
+  box-sizing: border-box;
+  padding-top: 0.2rem;
+}
+
+footer ul li a {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li a i {
+  font-size: 2rem !important;
+}
+
+footer ul li a p {
+  font-size: 1.25rem;
+}
+
+footer ul li.active {
+  border-top: 0.2rem solid red;
+  padding-top: 0rem;
+}
